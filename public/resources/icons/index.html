@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>File Explorer</title>
+        <link rel="stylesheet" type="text/css" href="/resources/stylesheet.css">
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    </head>
+    <body>
+        <div class="window">
+            
+            <div class="handle" id="titlebar">
+                <img style="image-rendering: pixelated;vertical-align: middle;" width="20" height="20" src="/resources/icons/explorer.png">
+                <span id="title">Exploring - </span>
+                </div>
+            <div id="toolarea">
+                <div class="area" style="padding: 3px;">    
+                    <div class="tooltip"><span class="first-letter">F</span>ile</div>
+                    <div class="tooltip"><span class="first-letter">E</span>dit</div>
+                    <div class="tooltip"><span class="first-letter"> V</span>iew</div>
+                    <div class="tooltip"><span class="first-letter"> T</span>ools</div>
+                    <div class="tooltip"><span class="first-letter"> H</span>elp</div>
+                </div>
+                <div class="area" style="padding:2px 0;">
+                    <a href="..">
+                        <img class="toolbutton" style="image-rendering: pixelated;vertical-align: middle;" width="20" height="20"  src="/resources/icons/enclosing.png">
+                    </a>
+                </div>
+            </div>
+            <!--<button class="add" onclick="addComponent()" type="button">Show</button>-->
+            <div class="list" id="root"></div>
+            <div id="toolarea">
+                <div class="inset"><span id="objects"></span> object(s)</div>
+            </div>
+        </div>
+        <script src="/resources/learn.js"></script>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'w95faregular';
+    src: url('w95fa-webfont.woff2') format('woff2'),
+         url('w95fa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'w95faregular';
+    color: rgb(48,48,48);
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #008080;
+}
+
+.first-letter {
+    text-decoration: underline solid 1.5px rgb(48,48,48);
+}
+
+.tooltip  {
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.toolbutton {
+    border: 2px outset #dfdfdf;
+    display: inline-block;
+}
+
+.toolbutton:active {
+    border: 2px inset #dfdfdf;
+    position: relative;
+    top: 2px;
+}
+
+.inset {
+    border: 2px inset #EFEFEF;
+    padding: 3px;
+}
+
+.area {
+  
+    border: 1px outset #dfdfdf;
+    background-color: #c0c0c0;
+}
+
+.window {
+    /*TEMPORARY*/
+    margin: 10px;
+    border: 2px outset #dfdfdf;
+    background-color: #c0c0c0;
+    padding: 1px;
+    min-width: 30em;
+    position: absolute;
+}
+
+#titlebar {
+    padding: 3px;
+    color: white;
+    background-color: rgb(0,0,128);
+    font-weight: bold;
+    cursor: move;
+    
+}
+
+#title {
+    color: inherit;
+    vertical-align: middle;
+}
+
+.list {
+    border: 1px inset #EFEFEF;
+    min-height: 30em;
+    font-size: .95em;
+    background-color: white;
+}
+
+.item {
+    color: black;
+    text-align: left;
+
+}
+
+.item a:active {
+    outline: dashed 1px rgb(48,48,48);
+
+}
+
+.test {
+    position: absolute;
+}
+
+#child {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.file_icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url('/resources/icons/text.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    display: inline-block;
+}
+
+.dir_icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url('/resources/icons/directory.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    display: inline-block;
+}
+
+#close {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #c0c0c0;
+}
