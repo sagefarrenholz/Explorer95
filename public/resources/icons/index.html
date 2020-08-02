@@ -12,11 +12,18 @@
         <div class="window">
             
             <div class="handle" id="titlebar">
-                <img style="image-rendering: pixelated;vertical-align: middle;" width="20" height="20" src="/resources/icons/explorer.png">
-                <span id="title">Exploring - </span>
+                <div class="window-info">
+                    <img style="image-rendering: pixelated;vertical-align: middle;" width="20" height="20" src="/resources/icons/explorer.png">
+                    <span id="title">Exploring - </span>
                 </div>
+                <div class="window-buttons">
+                    <div class="toolbutton" id="min"></div>
+                    <div class="toolbutton" id="max"></div>
+                    <div class="toolbutton" id="close"></div>
+                </div>
+            </div>
             <div id="toolarea">
-                <div class="area" style="padding: 3px;">    
+                <div class="area">    
                     <div class="tooltip"><span class="first-letter">F</span>ile</div>
                     <div class="tooltip"><span class="first-letter">E</span>dit</div>
                     <div class="tooltip"><span class="first-letter"> V</span>iew</div>

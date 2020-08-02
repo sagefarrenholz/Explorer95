@@ -30,24 +30,35 @@ body {
 }
 
 .first-letter {
-    text-decoration: underline solid 1.5px rgb(48,48,48);
+    text-decoration: underline solid 1.5px;
+    color: inherit;
 }
 
 .tooltip  {
-    padding: 0 5px;
+    padding: 3px 8px;
     display: inline-block;
+}
+
+.tooltip:hover {
+    background-color: rgb(0,0,128);
+    color: white;
 }
 
 .toolbutton {
     border: 2px outset #dfdfdf;
     display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #c0c0c0;
 }
 
 .toolbutton:active {
     border: 2px inset #dfdfdf;
     position: relative;
-    top: 2px;
+    top: 1px;
 }
+
 
 .inset {
     border: 2px inset #EFEFEF;
@@ -76,11 +87,13 @@ body {
     background-color: rgb(0,0,128);
     font-weight: bold;
     cursor: move;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #title {
-    color: inherit;
+    color: white;
     vertical-align: middle;
 }
 
@@ -135,8 +148,5 @@ body {
 }
 
 #close {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    background-color: #c0c0c0;
+
 }

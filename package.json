@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d public/resources"
+    "build": "babel src -d public/resources",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
