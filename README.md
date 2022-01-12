@@ -1,6 +1,6 @@
 ![Screenshot of Explorer95](/preview.png?raw=true)
 # Explorer95
-A Windows95 web-based file explorer
+A Win95 inspired web-based file explorer
 
 ### Installing & Deploying
 To install dependencies:
